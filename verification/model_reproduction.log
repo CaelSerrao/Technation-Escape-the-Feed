@@ -1,0 +1,250 @@
+Checksums verified 2.8339948654174805
+Loaded 32000204 ratings 13.391021966934204
+Training matrix (197301, 7712) 15113616 28.51887583732605
+SVD fitted 30.74903964996338
+Evaluation cohort 2000 44.04631233215332
+Full history step 0 reach-now 0.0 44.33891224861145
+Full history step 1 reach-now 0.003 44.593839168548584
+Full history step 2 reach-now 0.005 44.85092496871948
+Full history step 3 reach-now 0.0085 45.12535619735718
+Full history step 4 reach-now 0.0095 45.38689661026001
+Full history step 5 reach-now 0.0145 45.638920068740845
+Full history step 6 reach-now 0.0175 45.898749351501465
+Full history step 7 reach-now 0.021 46.147741079330444
+Full history step 8 reach-now 0.027 46.39906930923462
+Full history step 9 reach-now 0.0305 46.66454315185547
+Full history step 10 reach-now 0.0375 46.93091869354248
+20-item reset step 0 reach-now 0.0 47.17950081825256
+20-item reset step 1 reach-now 0.0125 47.4595901966095
+20-item reset step 2 reach-now 0.0185 47.72619652748108
+20-item reset step 3 reach-now 0.0265 47.99381875991821
+20-item reset step 4 reach-now 0.042 48.25553607940674
+20-item reset step 5 reach-now 0.0585 48.5180881023407
+20-item reset step 6 reach-now 0.0775 48.786900997161865
+20-item reset step 7 reach-now 0.0975 49.0438666343689
+20-item reset step 8 reach-now 0.122 49.30224943161011
+20-item reset step 9 reach-now 0.154 49.56357264518738
+20-item reset step 10 reach-now 0.1885 49.82564687728882
+{
+  "seed": 20261018,
+  "cutoff": "2023-01-01 UTC",
+  "raw_ratings": 32000204,
+  "raw_users": 200948,
+  "catalog_movies": 7712,
+  "training_users": 197301,
+  "training_positive_ratings": 15113616,
+  "training_ratings_catalog": 29573564,
+  "eligible_history_users": 153009,
+  "cohort_n": 2000,
+  "explained_variance": 0.11314022541046143,
+  "models": {
+    "Full history": {
+      "cumulative_success": [
+        0.0,
+        0.003,
+        0.005,
+        0.0085,
+        0.01,
+        0.015,
+        0.0185,
+        0.023,
+        0.0295,
+        0.033,
+        0.0415
+      ],
+      "current_success": [
+        0.0,
+        0.003,
+        0.005,
+        0.0085,
+        0.0095,
+        0.0145,
+        0.0175,
+        0.021,
+        0.027,
+        0.0305,
+        0.0375
+      ],
+      "mean_target_slots": [
+        0.305,
+        0.321,
+        0.333,
+        0.352,
+        0.372,
+        0.3945,
+        0.424,
+        0.45,
+        0.475,
+        0.506,
+        0.5425
+      ],
+      "success5_count": 30,
+      "success5_ci": [
+        0.01,
+        0.0205
+      ],
+      "thresholds5": {
+        "3": 0.015,
+        "4": 0.004
+      },
+      "groups": {
+        "taste_group": {
+          "Less-mainstream": {
+            "n": 667,
+            "success5": 0.019490254872563718,
+            "history_median": 87.0
+          },
+          "Middle": {
+            "n": 666,
+            "success5": 0.013513513513513514,
+            "history_median": 62.5
+          },
+          "Mainstream": {
+            "n": 667,
+            "success5": 0.01199400299850075,
+            "history_median": 40.0
+          }
+        },
+        "length_group": {
+          "20-50": {
+            "n": 898,
+            "success5": 0.02338530066815145,
+            "history_median": 31.0
+          },
+          "51-100": {
+            "n": 511,
+            "success5": 0.009784735812133072,
+            "history_median": 70.0
+          },
+          "101-250": {
+            "n": 458,
+            "success5": 0.008733624454148471,
+            "history_median": 141.5
+          },
+          "251+": {
+            "n": 133,
+            "success5": 0.0,
+            "history_median": 345.0
+          }
+        }
+      }
+    },
+    "20-item reset": {
+      "cumulative_success": [
+        0.0,
+        0.0125,
+        0.021,
+        0.03,
+        0.045,
+        0.064,
+        0.085,
+        0.1045,
+        0.1325,
+        0.1665,
+        0.198
+      ],
+      "current_success": [
+        0.0,
+        0.0125,
+        0.0185,
+        0.0265,
+        0.042,
+        0.0585,
+        0.0775,
+        0.0975,
+        0.122,
+        0.154,
+        0.1885
+      ],
+      "mean_target_slots": [
+        0.2925,
+        0.3375,
+        0.382,
+        0.4405,
+        0.5185,
+        0.608,
+        0.725,
+        0.855,
+        1.005,
+        1.179,
+        1.406
+      ],
+      "success5_count": 128,
+      "success5_ci": [
+        0.0535,
+        0.0755
+      ],
+      "thresholds5": {
+        "3": 0.064,
+        "4": 0.027
+      },
+      "groups": {
+        "taste_group": {
+          "Less-mainstream": {
+            "n": 667,
+            "success5": 0.07796101949025487,
+            "history_median": 87.0
+          },
+          "Middle": {
+            "n": 666,
+            "success5": 0.05555555555555555,
+            "history_median": 62.5
+          },
+          "Mainstream": {
+            "n": 667,
+            "success5": 0.05847076461769116,
+            "history_median": 40.0
+          }
+        },
+        "length_group": {
+          "20-50": {
+            "n": 898,
+            "success5": 0.042316258351893093,
+            "history_median": 31.0
+          },
+          "51-100": {
+            "n": 511,
+            "success5": 0.05675146771037182,
+            "history_median": 70.0
+          },
+          "101-250": {
+            "n": 458,
+            "success5": 0.09606986899563319,
+            "history_median": 141.5
+          },
+          "251+": {
+            "n": 133,
+            "success5": 0.12781954887218044,
+            "history_median": 345.0
+          }
+        }
+      }
+    }
+  },
+  "target_counts": {
+    "Documentary": 268,
+    "Western": 258,
+    "Musical": 243,
+    "War": 206,
+    "Horror": 202,
+    "Animation": 188,
+    "Children": 147,
+    "Mystery": 130,
+    "Fantasy": 111,
+    "Sci-Fi": 70,
+    "Romance": 67,
+    "Crime": 37,
+    "Action": 24,
+    "Adventure": 23,
+    "Thriller": 14,
+    "Comedy": 10,
+    "Drama": 2
+  },
+  "history_median": 56.0,
+  "paired_gain5": 0.049,
+  "paired_gain5_ci": [
+    0.0385,
+    0.0605
+  ]
+}
+Done seconds 49.972758293151855

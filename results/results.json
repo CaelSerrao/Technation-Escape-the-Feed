@@ -1,0 +1,511 @@
+{
+  "seed": 20261018,
+  "cutoff": "2023-01-01 UTC",
+  "raw_ratings": 32000204,
+  "raw_users": 200948,
+  "catalog_movies": 7712,
+  "training_users": 197301,
+  "training_positive_ratings": 15113616,
+  "training_ratings_catalog": 29573564,
+  "eligible_history_users": 153009,
+  "cohort_n": 2000,
+  "checksums": {
+    "ratings.csv": {
+      "md5": "cf12b74f9ad4b94a011f079e26d4270a",
+      "expected": "cf12b74f9ad4b94a011f079e26d4270a",
+      "match": true
+    },
+    "movies.csv": {
+      "md5": "0df90835c19151f9d819d0822e190797",
+      "expected": "0df90835c19151f9d819d0822e190797",
+      "match": true
+    }
+  },
+  "explained_variance": 0.11314022541046143,
+  "models": {
+    "Full history": {
+      "cumulative_success": [
+        0.0,
+        0.003,
+        0.005,
+        0.0085,
+        0.01,
+        0.015,
+        0.0185,
+        0.023,
+        0.0295,
+        0.033,
+        0.0415
+      ],
+      "current_success": [
+        0.0,
+        0.003,
+        0.005,
+        0.0085,
+        0.0095,
+        0.0145,
+        0.0175,
+        0.021,
+        0.027,
+        0.0305,
+        0.0375
+      ],
+      "mean_target_slots": [
+        0.305,
+        0.321,
+        0.333,
+        0.352,
+        0.372,
+        0.3945,
+        0.424,
+        0.45,
+        0.475,
+        0.506,
+        0.5425
+      ],
+      "success5_count": 30,
+      "success5_ci": [
+        0.01,
+        0.0205
+      ],
+      "thresholds5": {
+        "3": 0.015,
+        "4": 0.004
+      },
+      "groups": {
+        "taste_group": {
+          "Less-mainstream": {
+            "n": 667,
+            "success5": 0.019490254872563718,
+            "history_median": 87.0
+          },
+          "Middle": {
+            "n": 666,
+            "success5": 0.013513513513513514,
+            "history_median": 62.5
+          },
+          "Mainstream": {
+            "n": 667,
+            "success5": 0.01199400299850075,
+            "history_median": 40.0
+          }
+        },
+        "length_group": {
+          "20-50": {
+            "n": 898,
+            "success5": 0.02338530066815145,
+            "history_median": 31.0
+          },
+          "51-100": {
+            "n": 511,
+            "success5": 0.009784735812133072,
+            "history_median": 70.0
+          },
+          "101-250": {
+            "n": 458,
+            "success5": 0.008733624454148471,
+            "history_median": 141.5
+          },
+          "251+": {
+            "n": 133,
+            "success5": 0.0,
+            "history_median": 345.0
+          }
+        }
+      }
+    },
+    "20-item reset": {
+      "cumulative_success": [
+        0.0,
+        0.0125,
+        0.021,
+        0.03,
+        0.045,
+        0.064,
+        0.085,
+        0.1045,
+        0.1325,
+        0.1665,
+        0.198
+      ],
+      "current_success": [
+        0.0,
+        0.0125,
+        0.0185,
+        0.0265,
+        0.042,
+        0.0585,
+        0.0775,
+        0.0975,
+        0.122,
+        0.154,
+        0.1885
+      ],
+      "mean_target_slots": [
+        0.2925,
+        0.3375,
+        0.382,
+        0.4405,
+        0.5185,
+        0.608,
+        0.725,
+        0.855,
+        1.005,
+        1.179,
+        1.406
+      ],
+      "success5_count": 128,
+      "success5_ci": [
+        0.0535,
+        0.0755
+      ],
+      "thresholds5": {
+        "3": 0.064,
+        "4": 0.027
+      },
+      "groups": {
+        "taste_group": {
+          "Less-mainstream": {
+            "n": 667,
+            "success5": 0.07796101949025487,
+            "history_median": 87.0
+          },
+          "Middle": {
+            "n": 666,
+            "success5": 0.05555555555555555,
+            "history_median": 62.5
+          },
+          "Mainstream": {
+            "n": 667,
+            "success5": 0.05847076461769116,
+            "history_median": 40.0
+          }
+        },
+        "length_group": {
+          "20-50": {
+            "n": 898,
+            "success5": 0.042316258351893093,
+            "history_median": 31.0
+          },
+          "51-100": {
+            "n": 511,
+            "success5": 0.05675146771037182,
+            "history_median": 70.0
+          },
+          "101-250": {
+            "n": 458,
+            "success5": 0.09606986899563319,
+            "history_median": 141.5
+          },
+          "251+": {
+            "n": 133,
+            "success5": 0.12781954887218044,
+            "history_median": 345.0
+          }
+        }
+      }
+    }
+  },
+  "target_counts": {
+    "Documentary": 268,
+    "Western": 258,
+    "Musical": 243,
+    "War": 206,
+    "Horror": 202,
+    "Animation": 188,
+    "Children": 147,
+    "Mystery": 130,
+    "Fantasy": 111,
+    "Sci-Fi": 70,
+    "Romance": 67,
+    "Crime": 37,
+    "Action": 24,
+    "Adventure": 23,
+    "Thriller": 14,
+    "Comedy": 10,
+    "Drama": 2
+  },
+  "history_median": 56.0,
+  "paired_gain5": 0.049,
+  "paired_gain5_ci": [
+    0.0385,
+    0.0605
+  ],
+  "example": {
+    "userId": 145825,
+    "history_n": 106,
+    "mainstream_score": 9.562435393928846,
+    "target": "Horror",
+    "target_history_share": 0.09433962264150944,
+    "cohort_index": 755,
+    "signals": [
+      {
+        "movieId": 39446,
+        "title": "Saw II (2005)",
+        "genres": "Horror|Thriller"
+      },
+      {
+        "movieId": 31804,
+        "title": "Night Watch (Nochnoy dozor) (2004)",
+        "genres": "Action|Fantasy|Horror|Mystery|Sci-Fi|Thriller"
+      },
+      {
+        "movieId": 84952,
+        "title": "Confessions (Kokuhaku) (2010)",
+        "genres": "Drama|Horror"
+      },
+      {
+        "movieId": 4697,
+        "title": "Basket Case (1982)",
+        "genres": "Comedy|Horror"
+      },
+      {
+        "movieId": 2315,
+        "title": "Bride of Chucky (Child's Play 4) (1998)",
+        "genres": "Comedy|Horror|Thriller"
+      }
+    ],
+    "lists": {
+      "Full history": {
+        "0": [
+          {
+            "movieId": 4995,
+            "title": "Beautiful Mind, A (2001)",
+            "target_match": false
+          },
+          {
+            "movieId": 318,
+            "title": "Shawshank Redemption, The (1994)",
+            "target_match": false
+          },
+          {
+            "movieId": 6333,
+            "title": "X2: X-Men United (2003)",
+            "target_match": false
+          },
+          {
+            "movieId": 5989,
+            "title": "Catch Me If You Can (2002)",
+            "target_match": false
+          },
+          {
+            "movieId": 593,
+            "title": "Silence of the Lambs, The (1991)",
+            "target_match": true
+          },
+          {
+            "movieId": 527,
+            "title": "Schindler's List (1993)",
+            "target_match": false
+          },
+          {
+            "movieId": 8132,
+            "title": "Gladiator (1992)",
+            "target_match": false
+          },
+          {
+            "movieId": 1,
+            "title": "Toy Story (1995)",
+            "target_match": false
+          },
+          {
+            "movieId": 293,
+            "title": "L\u00e9on: The Professional (a.k.a. The Professional) (L\u00e9on) (1994)",
+            "target_match": false
+          },
+          {
+            "movieId": 51662,
+            "title": "300 (2007)",
+            "target_match": false
+          }
+        ],
+        "5": [
+          {
+            "movieId": 4995,
+            "title": "Beautiful Mind, A (2001)",
+            "target_match": false
+          },
+          {
+            "movieId": 6333,
+            "title": "X2: X-Men United (2003)",
+            "target_match": false
+          },
+          {
+            "movieId": 318,
+            "title": "Shawshank Redemption, The (1994)",
+            "target_match": false
+          },
+          {
+            "movieId": 5989,
+            "title": "Catch Me If You Can (2002)",
+            "target_match": false
+          },
+          {
+            "movieId": 593,
+            "title": "Silence of the Lambs, The (1991)",
+            "target_match": true
+          },
+          {
+            "movieId": 8132,
+            "title": "Gladiator (1992)",
+            "target_match": false
+          },
+          {
+            "movieId": 527,
+            "title": "Schindler's List (1993)",
+            "target_match": false
+          },
+          {
+            "movieId": 1,
+            "title": "Toy Story (1995)",
+            "target_match": false
+          },
+          {
+            "movieId": 293,
+            "title": "L\u00e9on: The Professional (a.k.a. The Professional) (L\u00e9on) (1994)",
+            "target_match": false
+          },
+          {
+            "movieId": 51662,
+            "title": "300 (2007)",
+            "target_match": false
+          }
+        ]
+      },
+      "20-item reset": {
+        "0": [
+          {
+            "movieId": 6333,
+            "title": "X2: X-Men United (2003)",
+            "target_match": false
+          },
+          {
+            "movieId": 8132,
+            "title": "Gladiator (1992)",
+            "target_match": false
+          },
+          {
+            "movieId": 4995,
+            "title": "Beautiful Mind, A (2001)",
+            "target_match": false
+          },
+          {
+            "movieId": 7254,
+            "title": "The Butterfly Effect (2004)",
+            "target_match": false
+          },
+          {
+            "movieId": 1645,
+            "title": "The Devil's Advocate (1997)",
+            "target_match": false
+          },
+          {
+            "movieId": 5989,
+            "title": "Catch Me If You Can (2002)",
+            "target_match": false
+          },
+          {
+            "movieId": 5630,
+            "title": "Red Dragon (2002)",
+            "target_match": false
+          },
+          {
+            "movieId": 1246,
+            "title": "Dead Poets Society (1989)",
+            "target_match": false
+          },
+          {
+            "movieId": 7458,
+            "title": "Troy (2004)",
+            "target_match": false
+          },
+          {
+            "movieId": 51662,
+            "title": "300 (2007)",
+            "target_match": false
+          }
+        ],
+        "5": [
+          {
+            "movieId": 7254,
+            "title": "The Butterfly Effect (2004)",
+            "target_match": false
+          },
+          {
+            "movieId": 6333,
+            "title": "X2: X-Men United (2003)",
+            "target_match": false
+          },
+          {
+            "movieId": 8132,
+            "title": "Gladiator (1992)",
+            "target_match": false
+          },
+          {
+            "movieId": 4148,
+            "title": "Hannibal (2001)",
+            "target_match": true
+          },
+          {
+            "movieId": 5630,
+            "title": "Red Dragon (2002)",
+            "target_match": false
+          },
+          {
+            "movieId": 4995,
+            "title": "Beautiful Mind, A (2001)",
+            "target_match": false
+          },
+          {
+            "movieId": 1645,
+            "title": "The Devil's Advocate (1997)",
+            "target_match": false
+          },
+          {
+            "movieId": 6323,
+            "title": "Identity (2003)",
+            "target_match": true
+          },
+          {
+            "movieId": 8957,
+            "title": "Saw (2004)",
+            "target_match": true
+          },
+          {
+            "movieId": 51662,
+            "title": "300 (2007)",
+            "target_match": false
+          }
+        ]
+      }
+    },
+    "target_counts": {
+      "Full history": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "20-item reset": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        3,
+        4,
+        4,
+        4,
+        5,
+        5
+      ]
+    }
+  }
+}

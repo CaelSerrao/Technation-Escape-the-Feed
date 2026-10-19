@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "numeric_json_values_compared": 946,
+  "nonzero_json_differences": [
+    {
+      "path": "extended_results.json/benchmark/paired/20-item reset minus Full history/effective_genres/ci/1",
+      "absolute_difference": 1.1102230246251565e-16
+    }
+  ],
+  "max_json_absolute_difference": 1.1102230246251565e-16,
+  "npz_arrays": {
+    "model.npz": {
+      "embeddings": {
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      "movie_ids": {
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      }
+    },
+    "trajectories.npz": {
+      "full": {
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      "recent": {
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      "signals": {
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      "targets": {
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      "full_top": {
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      "recent_top": {
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      }
+    },
+    "benchmark_top10.npz": {
+      "users": {
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      "popularity": {
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      "full": {
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      },
+      "reset": {
+        "exact_match": true,
+        "max_absolute_difference": 0.0
+      }
+    }
+  },
+  "csv_tables": {
+    "cohort.csv": {
+      "rows": 2000,
+      "columns": 9,
+      "pass": true
+    },
+    "exposure_cohort.csv": {
+      "rows": 2000,
+      "columns": 13,
+      "pass": true
+    },
+    "benchmark_cohort.csv": {
+      "rows": 2000,
+      "columns": 3,
+      "pass": true
+    },
+    "benchmark_metrics.csv": {
+      "rows": 6000,
+      "columns": 7,
+      "pass": true
+    },
+    "fairness_cohort.csv": {
+      "rows": 1175,
+      "columns": 13,
+      "pass": true
+    }
+  },
+  "note": "A fresh model fit and both analyses were run with pinned package versions. Floating-point differences below 1e-12 are accepted; report rounding is unaffected."
+}
